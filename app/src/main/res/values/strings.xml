@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Learning</string>
+    <string name="app_name">Dagger Learning</string>
+    <string name="fetch_failed">Failed to Fetch Data</string>
+    <string name="base_url">https://jsonplaceholder.typicode.com/</string>
 </resources>

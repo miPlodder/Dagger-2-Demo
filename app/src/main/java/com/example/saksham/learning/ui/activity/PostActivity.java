@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.example.saksham.learning.component.DaggerPostComponent;
@@ -61,7 +60,7 @@ public class PostActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<Post>> call, Throwable t) {
-                Toast.makeText(PostActivity.this, "Failed To Fetch", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PostActivity.this, getString(R.string.fetch_failed), Toast.LENGTH_SHORT).show();
             }
         });
 
